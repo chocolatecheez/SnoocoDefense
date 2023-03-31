@@ -2,19 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tower : MonoBehaviour
-{
-    // POOP
+public class Tower : MonoBehaviour {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private Health health;
+
+    private void Start(){
+        health = GetComponent<Health>();
+        Debug.Log(health.currentHP);
+
+        health.TakeDamage(5);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
