@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour {
 
-    private Health health;
+    public Health health;
 
     private void Start(){
         health = GetComponent<Health>();
-        Debug.Log(health.currentHP);
 
-        health.TakeDamage(5);
     }
 
 }

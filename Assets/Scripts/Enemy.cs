@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Tower tower_todamage;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
+        if (tower_todamage != null)
+        {
+            tower_todamage.health.TakeDamage(1);
+        }
     }
 }
