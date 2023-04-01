@@ -8,6 +8,7 @@ public class STATathon : MonoBehaviour
 
     public float range;
 
-    public float spd;
+    public float slap;
 
+    public float feet;
 }
